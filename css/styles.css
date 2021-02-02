@@ -75,3 +75,39 @@ h2{
 h3{
   font-size: 1,5em;
 }
+
+pre {
+  background-color: #FEC62E;
+}
+
+.hero{
+  background-image: linear-gradient(to top,rgba(255,255,255,.3),transparent), url(../images/pattern.png);
+  /* background-repeat: no-repeat;
+  background-position:left 50px bottom -50px;
+  background-size: cover; */
+  height: 350px;
+}
+
+
+
+/* Psuedo Elementos elementos seleccionables y creados a partir de otros elementos como after y before o el placeholder de los inputs de formulario, en esta clase aprenderemos a usarlos. */
+
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList,decimal);
+}
+
+.section-content h3::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
+}
