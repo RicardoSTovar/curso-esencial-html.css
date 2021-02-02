@@ -1,11 +1,77 @@
+@font-face{
+  font-family: charter;
+  src: url('../fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter-italic;
+  src: url('../fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: charter-bold;
+  src: url('../fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: charter-bold-italic;
+  src: url('../fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root{
+  font-size: 18px;
+  --gray30: #212121; /*Los custom properties o variables en CSS nos ayudarán a almacenar datos para ser reutilizados por referencia en múltiples partes de nuestras hojas de estilo, son modificables según su contexto y también manipulables desde JavaScript */
+  --gray20: #212429;
+  --gray10: #616161;
+}
+
 body {
-  color: #212121;
+  color: var(--gray30);
+  font-family: 'Roboto',sans-serif;
+  /* font-family: charter; */
 }
 
 a{
-  color: #212121;
+  color: var(--gray30);
+}
+
+header{
+  /* --gray10:red; */
+  font-size: 14px;
+  color: var(--gray10);
+}
+
+header a {
+  color:var(--gray10);
+  text-decoration: none;
+}
+
+/* :hover es una pseudoclase */
+header a:hover {
+   color: var(--gray30);
+}
+
+nav details summary {
+  font-weight: bold;
 }
 
 h1{
-  font-size: 60px; 
+  font-size: 60px;
+  /* font-size: 3.75em; */
+}
+
+h2{
+  font-size: 2em; /*Se multiplica por el elemento padre (unidad relativa)*/
+}
+
+h3{
+  font-size: 1,5em;
 }
