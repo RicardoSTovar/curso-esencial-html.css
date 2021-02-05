@@ -70,9 +70,6 @@ h1{
   /* font-size: 3.75em; */
 }
 
-h1 ~ p {
-  margin-bottom: 64px;
-}
 
 hr {
    margin: 64px 0;
